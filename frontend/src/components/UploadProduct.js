@@ -37,6 +37,7 @@ const UploadProduct = ({
   }
 
   const handleUploadProduct = async(e) => {
+    console.log("file",e)
     const file = e.target.files[0]
     const uploadImageCloudinary = await uploadImage(file)
 

@@ -58,7 +58,7 @@ const Header = () => {
       <div className=' h-full container mx-auto flex items-center px-4 justify-between'>
             <div className=''>
                 <Link to={"/"}>
-                <div className='w-60 h-[81px] mx-auto'>
+                <div className='w-auto h-auto mx-auto md:w-60 md:h-[81px]'>
                         <img src={logo1} alt='login icons'/>
                     </div>
                 </Link>
@@ -99,10 +99,10 @@ const Header = () => {
                         <nav>
                           {
                             user?.role === ROLE.ADMIN && (
-                              <Link to={"/admin-panel/all-products"} className='whitespace-nowrap hidden md:block hover:bg-slate-100 p-2' onClick={()=>setMenuDisplay(preve => !preve)}>Admin Panel</Link>
+                              <Link to={"/admin-panel/all-products"} className='whitespace-nowrap md:block hover:bg-slate-100 p-2' onClick={()=>setMenuDisplay(preve => !preve)}>Admin Panel</Link>
                             )
                           }
-                          <Link to={'/order'} className='whitespace-nowrap hidden md:block hover:bg-slate-100 p-2' onClick={()=>setMenuDisplay(preve => !preve)}>Order</Link>
+                          <Link to={'/order'} className='whitespace-nowrap md:block hover:bg-slate-100 p-2' onClick={()=>setMenuDisplay(preve => !preve)}>Order</Link>
                          
                         </nav>
                       </div>
