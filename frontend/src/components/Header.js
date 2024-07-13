@@ -58,8 +58,8 @@ const Header = () => {
       <div className=' h-full container mx-auto flex items-center px-4 justify-between'>
             <div className=''>
                 <Link to={"/"}>
-                <div className='w-auto h-auto mx-auto md:w-60 md:h-[81px]'>
-                        <img src={logo1} alt='login icons'/>
+                <div className='w-auto h-auto mx-auto md:w-auto md:h-[81px]'>
+                        <img style={{width:"auto",height:"62px"}} src={logo1} alt='login icons'/>
                     </div>
                 </Link>
             </div>
