@@ -10,6 +10,7 @@ import { toast } from 'react-toastify'
 import { setUserDetails } from '../store/userSlice';
 import ROLE from '../common/role';
 import Context from '../context';
+// import logo1 from '../assest/favicon.ico'
 import logo1 from '../assest/logo121.png'
 
 const Header = () => {
@@ -58,13 +59,13 @@ const Header = () => {
       <div className=' h-full container mx-auto flex items-center px-4 justify-between'>
             <div className=''>
                 <Link to={"/"}>
-                <div className='w-auto h-auto mx-auto md:w-auto md:h-[81px]'>
+                <div className='w-auto h-auto mx-auto md:w-auto md:h-[64px]'>
                         <img style={{width:"auto",height:"62px"}} src={logo1} alt='login icons'/>
                     </div>
                 </Link>
             </div>
 
-            <div className='hidden lg:flex items-center w-full justify-between max-w-sm border rounded-full focus-within:shadow pl-2'>
+            <div className='lg:flex items-center w-full justify-between max-w-sm border rounded-full focus-within:shadow pl-2 flex p-0 m-2'>
                 <input type='text' placeholder='search product here...' className='w-full outline-none' onChange={handleSearch} value={search}/>
                 <div className='text-lg min-w-[50px] h-8 bg-red-600 flex items-center justify-center rounded-r-full text-white'>
                   <GrSearch />
@@ -72,7 +73,7 @@ const Header = () => {
             </div>
 
 
-            <div className='flex items-center gap-7'>
+            <div className='flex items-center md:gap-7 gap-3'>
                 
                 <div className='relative flex justify-center'>
 
