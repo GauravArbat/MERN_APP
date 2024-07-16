@@ -11,7 +11,7 @@ import { setUserDetails } from '../store/userSlice';
 import ROLE from '../common/role';
 import Context from '../context';
 // import logo1 from '../assest/favicon.ico'
-import logo1 from '../assest/logo1.jpg'
+import logo1 from '../assest/logo122.jpg'
 
 const Header = () => {
   const user = useSelector(state => state?.user?.user)
@@ -59,8 +59,8 @@ const Header = () => {
       <div className=' h-full container mx-auto flex items-center px-4 justify-between'>
             <div className=''>
                 <Link to={"/"}>
-                <div className='w-[111px] h-auto mx-auto md:w-[247px] md:h-[41px]'>
-                        <img style={{width:"169px",height:"40px"}} src={logo1} alt='login icons'/>
+                <div className='w-[51px] h-auto mx-auto md:w-[247px] md:h-[41px]'>
+                        <img style={{width:"96px",height:"40px"}} src={logo1} alt='login icons'/>
                     </div>
                 </Link>
             </div>
